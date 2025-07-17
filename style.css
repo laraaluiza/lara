@@ -5,24 +5,27 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-
     background-color: #FF6EB4;
 }
 
 .card {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 
-    height: 600px;
-    width: 600px;
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
 
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-    padding: 40px;
     text-align: center;
+}
+
+.card > .question {
+    width: 100%;
 }
 
 .card > .question p {
@@ -30,6 +33,8 @@ body {
     font-family: sans-serif;
     font-weight: 600;
     text-align: center;
+    margin: 0;
+    line-height: 1.4;
 }
 
 .buttons {
@@ -37,15 +42,37 @@ body {
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 .btn-yes, .btn-no {
     height: 48px;
     width: 100px;
-
     border: none;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
-    curs
+    cursor: pointer;
+}
+
+.btn-yes {
+    background-color: #9AFF9A;
+}
+
+.btn-no {
+    background-color: #FF4040;
+    color: #fff;
+}
+
+.answer {
+    display: none;
+}
+
+.answer > p {
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FF6EB4;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+}
