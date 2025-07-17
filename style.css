@@ -1,53 +1,52 @@
+/* Centraliza a página toda */
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FF6EB4;
 }
 
+/* Centraliza tudo dentro do card */
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    width: 90%;
-    max-width: 600px;
-    padding: 40px;
+    justify-content: center;
 
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
     text-align: center;
 }
 
-.card > .question {
-    width: 100%;
-}
-
-.card > .question p {
-    font-size: 32px;
+/* Estiliza o texto da pergunta */
+.question p {
+    font-size: 28px;
     font-family: sans-serif;
     font-weight: 600;
     text-align: center;
-    margin: 0;
     line-height: 1.4;
+    margin: 0 0 24px 0;
 }
 
+/* Botões centralizados */
 .buttons {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-top: 24px;
 }
 
 .btn-yes, .btn-no {
     height: 48px;
     width: 100px;
+
     border: none;
     border-radius: 8px;
     font-size: 16px;
@@ -64,6 +63,7 @@ body {
     color: #fff;
 }
 
+/* Resposta escondida por padrão */
 .answer {
     display: none;
 }
